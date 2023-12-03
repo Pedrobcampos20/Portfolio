@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Montserrat:ital,wght@0,600;1,400 & display=swap');
+
+:root{
+    --cor-primaria: #213555; /* black */
+    --cor-secundaria: #F0F0F0; /*white*/
+    --cor-terciario: #E5D283; /*greenyellow*/
+    --cor-hover: #4F709C; /*rgb(30, 30, 30*/
+    --fonte-principal: 'Bebas Neue', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.destaque{
+    color: var(--cor-terciario);
+}
+
+.apresentação{
+    margin: 8% 10%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 82px
+}
+
+.apresentação_conteúdo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentação_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    
+}
+
+.apresentação_texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    
+}
+
+.apresentação_subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.apresentação_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.apresentação_link{
+    border: 2px solid var(--cor-terciario); 
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    color: var(--cor-secundaria);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentação_imagem{
+    border-radius: 20px;
+    width: 50%;
+}
+
+.apresentação_link:hover{
+    background-color: var(--cor-hover);
+}
+
+.apresentação_rodapé{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciario);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+
+.apresentação_cabeçalho{
+    padding: 2% 0% 0% 10%;
+
+}
+
+.apresentação_cabeçalho_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciario);
+    text-decoration: none;
+
+}
+
+.apresentação_menu_cabeçalho{
+ display: flex;
+ gap: 80px;
+}
+
+
+.modal_projetos{
+    margin: -10% -25%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    width: 32rem;
+    height: 40rem;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 35%;
+    top: 41%;
+    border: 2px solid var(--cor-terciario);
+    border-radius: 20px;
+    display: none;
+    
+    
+}
+
+.modal_diplomas{
+    margin: -10% -25%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    width: 32rem;
+    height: 40rem;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 35%;
+    top: 41%;
+    border: 2px solid var(--cor-terciario);
+    border-radius: 20px;
+    display: none;
+    
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid var(--cor-terciario);
+}
+
+.fechar-1{
+    background-color: var(--cor-terciario);
+    color: var(--cor-primaria);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.fechar-2{
+    background-color: var(--cor-terciario);
+    color: var(--cor-primaria);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.Projetos{
+    display: flex;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.Projeto1-fundo{
+    width: 5rem;
+    height: 3rem;
+   
+}
+
+.Projeto2-fundo{
+    width: 5rem;
+    height: 3rem;
+   
+}
+
+.Titulo-Projeto1{
+    width: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: var(--cor-terciario);
+    text-decoration: none;
+    padding: 10%;
+    
+
+}
+
+
+.Titulo-Projeto2{
+    width: 10px;
+    height: 30px;
+    font-size: 1rem;
+    color: var(--cor-terciario);
+    text-decoration: none;
+    padding: 10%;
+
+}
+
+@media(max-width: 1200px){
+    .apresentação{
+
+        flex-direction: column-reverse;
+        
+        
+    }
+
+@media(max-width: 451px){
+
+    .modal_diplomas{
+        margin: -10% -25%;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+        font-size: 1.5rem;
+        font-family: var(--fonte-secundaria);
+        width: 17rem;
+        height: 70rem;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        left: 35%;
+        top: 75%;
+        border: 2px solid var(--cor-terciario);
+        border-radius: 20px;
+        display: none;
+        
+    }
+
+    .modal_projetos{
+        margin: -10% -25%;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+        font-size: 1.5rem;
+        font-family: var(--fonte-secundaria);
+        width: 17rem;
+        height: 70rem;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        left: 35%;
+        top: 75%;
+        border: 2px solid var(--cor-terciario);
+        border-radius: 20px;
+        display: none;
+        
+        
+    }
+    .fechar-1{
+        background-color: var(--cor-terciario);
+        color: var(--cor-primaria);
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: var(--fonte-secundaria);
+        position: absolute;
+        bottom: 1%;
+        right: 3%;
+        cursor: pointer;
+    }
+    
+    .fechar-2{
+        background-color: var(--cor-terciario);
+        color: var(--cor-primaria);
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: var(--fonte-secundaria);
+        position: absolute;
+        bottom: 1%;
+        right: 3%;
+        cursor: pointer;
+    }
+}
+}
